@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body>
+		<div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable mui-slide-in">
+
+			<!--主界面部分-->
+			<div class="mui-inner-wrap">
+				<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper" style="background: #fff;">
+					<div id="slider" class="mui-slider">
+						<div class="mui-slider-group mui-slider-loop">
+							<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+							<div class="mui-slider-item mui-slider-item-duplicate">
+								<a href="#">
+									<img src="http://18r.site:18/img/4.jpg">
+								</a>
+							</div>
+							<!-- 第一张 -->
+							<div class="mui-slider-item">
+								<a href="#">
+									<img src="http://18r.site:18/img/1.jpg">
+								</a>
+							</div>
+							<!-- 第二张 -->
+							<div class="mui-slider-item">
+								<a href="#">
+									<img src="http://18r.site:18/img/2.jpg">
+								</a>
+							</div>
+							<!-- 第三张 -->
+							<div class="mui-slider-item">
+								<a href="#">
+									<img src="http://18r.site:18/img/3.jpg">
+								</a>
+							</div>
+							<!-- 第四张 -->
+							<div class="mui-slider-item">
+								<a href="#">
+									<img src="http://18r.site:18/img/4.jpg">
+								</a>
+							</div>
+							<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+							<div class="mui-slider-item mui-slider-item-duplicate">
+								<a href="#">
+									<img src="http://18r.site:18/img/1.jpg">
+								</a>
+							</div>
+						</div>
+						<div class="mui-slider-indicator">
+							<div class="mui-indicator mui-active"></div>
+							<div class="mui-indicator"></div>
+							<div class="mui-indicator"></div>
+							<div class="mui-indicator"></div>
+						</div>
+					</div>
+					<br>
+					<ul class="mui-table-view mui-grid-view mui-grid-9">
+						<li class="mui-table-view-cell mui-col-xs-6 mui-col-sm-6">
+							<a class="fun" href="iframe.html?#&室温监控#&http://18r.site:18/app/temperature">
+								<span class="mui-icon mui-icon-home"></span>
+								<p>室温：20℃</p>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-col-xs-6 mui-col-sm-6">
+							<a class="fun" href="iframe.html?#&活动量监控#&http://18r.site:18/app/activity">
+								<span class="mui-icon mui-icon-location"></span>
+								<p>活动量：1km</p>
+							</a></li>
+						<li class="mui-table-view-cell mui-col-xs-6 mui-col-sm-6">
+							<a class="fun" href="iframe.html?#&煤气泄漏#&http://18r.site:18/app/gas">
+								<span class="mui-icon mui-icon-close"></span>
+								<p>煤气泄漏：无</p>
+							</a></li>
+						<li class="mui-table-view-cell mui-col-xs-6 mui-col-sm-6"><a class="fun" id="camera">
+								<span class="mui-icon mui-icon-camera"></span>
+								<p>摄像头</p>
+							</a></li>
+						<button class="more" id="more">
+							<span class="mui-icon mui-icon-paperplane"></span>
+							<p>更多功能</p>
+						</button>
+					</ul>
+
+				</div>
+				<!-- off-canvas backdrop -->
+				<div class="mui-off-canvas-backdrop"></div>
+			</div>
+			<!--侧滑菜单部分-->
+			<aside id="offCanvasSide" class="mui-off-canvas-left">
+				<div id="offCanvasSideScroll" class="mui-scroll-wrapper">
+					<div class="header">
+						<img width="100px" height="100px" class="head" src="img/head.jpg" />
+						<h3 class="title"><font id="name"></font>，您好</h3>
+					</div>
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right" href="iframe.html?#&账号管理#&http://18r.site:18/app/user">
+								<span class="mui-icon mui-icon-contact"></span> 账号管理
+							</a>
+						</li>
+					</ul>
+					<br>
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right" href="iframe.html?#&历史记录#&http://18r.site:18/app/history">
+								<span class="mui-icon mui-icon-trash"></span> 历史记录
+							</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right" href="iframe.html?#&老人社区#&http://18r.site:18/app/ranking">
+								<span class="mui-icon mui-icon-pengyouquan"></span> 老人社区
+							</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right" href="iframe.html?#&守护天数#&http://18r.site:18/app/guard">
+								<span class="mui-icon mui-icon-star"></span> 守护天数
+							</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right" id="tel">
+								<span class="mui-icon mui-icon-phone"></span> 联系客服
+							</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right" href="iframe.html?#&意见反馈#&http://18r.site:18/app/feedback">
+								<span class="mui-icon mui-icon-email"></span> 意见反馈
+							</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right" href="iframe.html?#&关于#&http://18r.site:18/app/about">
+								<span class="mui-icon mui-icon-help"></span> 关于我们
+							</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right" href="setting.html">
+								<span class="mui-icon mui-icon-gear"></span> 系统设置
+							</a>
+						</li>
+						<li id="quit" class="mui-table-view-cell">
+							<span class="mui-icon mui-icon-close"></span> 退出应用
+						</li>
+					</ul>
+				</div>
+			</aside>
+		</div>
+
+		<script src="js/lib/jquery2.js"></script>
+		<script src="js/lib/mui.min.js"></script>
+		<script src="js/app/main.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav" style="padding-right: 15px;">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">设置</h1>
+		</header>
+		<div class="mui-content">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell mui-media">
+					<img class="mui-media-object mui-pull-left" src="img/user-photo.png">
+					<a class="mui-media-body" href="iframe.html?#&账号管理#&http://18r.site:18/app/user">
+						<span id="name">果子</span>
+						<p class='mui-ellipsis'>账号管理</p>
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right" href="iframe.html?#&意见反馈#&http://18r.site:18/app/feedback">
+						<span class="mui-icon mui-icon-email"></span> 意见反馈
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right" id="tel"><span class="mui-icon mui-icon-phone"></span> 联系客服</a>
+				</li>
+			</ul>
+			<br>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right" href="iframe.html?#&关于#&http://18r.site:18/app/about">
+						<span class="mui-icon mui-icon-help"></span> 关于我们
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+						<span class="mui-icon mui-icon-gear"></span> 版本更新
+						<span class="mui-badge mui-badge-inverted">已是最新</span>
+					</a>
+				</li>
+			</ul>
+			<br>
+			<button id='exit' class="mui-btn mui-btn-block mui-btn-primary">退出登录</button>
+		</div>
+		<script src="js/lib/mui.min.js"></script>
+		<script src="js/lib/zepto.min.js"></script>
+		<script src="js/lib/md5.min.js"></script>
+		<script src="js/app/setting.js"></script>
+</html>
